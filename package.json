@@ -2,13 +2,16 @@
   "name": "hostel_outpass",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://navyag0106-sudo.github.io/outpass",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "setup-db": "node scripts/setup-collections.js"
+    "setup-db": "node scripts/setup-collections.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
